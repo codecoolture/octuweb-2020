@@ -1,30 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Test-driven front-end development
 
-## Getting Started
+> Material de apoyo para el artículo: "Test-driven front-end development" publicado en [**Octuweb**](https://octuweb.com/).
 
-First, run the development server:
+Este repositorio contiene un test de alto nivel escrito utilizando [**Cypress**](https://www.cypress.io/) ([`sendContactMessage`](./cypress/integration/sendContactMessage.test.ts)) y otros de una granularidad inferior, utilizando [**Testing Library**](https://testing-library.com/) ([`ContactForm.test.tsx`](./components/ContactForm.test.tsx)).
 
-```bash
-npm run dev
-# or
-yarn dev
+## Cómo ejecutar los tests
+
+El primer paso, es instalar las dependencias del proyecto:
+
+```shell
+$ yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Después, hay un par de comandos listos para ejecutar las diferentes suites de pruebas:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```shell
+$ yarn test:acc # ejecuta la suite de Cypress
+$ yarn test:unit # ejecuta la suite de Testing Library
+```
 
-## Learn More
+El primero, incluye también las instrucciones necesarias para ejecutar la aplicación (que utiliza [Next.js](https://nextjs.org/)) sobre la que se realizarán las pruebas de aceptación. Si queréis ver a Cypress en acción, haciendo clicks en el navegador y utilizando la aplicación, podéis utilizar el comando:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```shell
+$ yarn cy:open
+```
