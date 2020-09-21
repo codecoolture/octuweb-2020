@@ -19,7 +19,7 @@ $ yarn test:acc # ejecuta la suite de Cypress
 $ yarn test:unit # ejecuta la suite de Testing Library
 ```
 
-El primero, incluye también las instrucciones necesarias para ejecutar la aplicación (que utiliza [Next.js](https://nextjs.org/)) sobre la que se realizarán las pruebas de aceptación. Si queréis ver a Cypress en acción, haciendo clicks en el navegador y utilizando la aplicación, podéis utilizar el comando:
+El primero, incluye también las instrucciones necesarias para ejecutar la aplicación (que utiliza [**Next.js**](https://nextjs.org/)) sobre la que se realizarán las pruebas de aceptación. Si queréis ver a Cypress en acción, haciendo clicks en el navegador y utilizando la aplicación, podéis usar el comando:
 
 ```shell
 $ yarn cy:open
