@@ -1,6 +1,6 @@
 # Test-driven front-end development
 
-> Material de apoyo para el artículo: "Test-driven front-end development" publicado en [**Octuweb**](https://octuweb.com/).
+> Material de apoyo para el artículo: [**Test-driven front-end development**](https://octuweb.com/test-driven-front-end-development/) publicado en [**Octuweb**](https://octuweb.com/).
 
 Este repositorio contiene un test de alto nivel escrito utilizando [**Cypress**](https://www.cypress.io/) ([`sendContactMessage`](./cypress/integration/sendContactMessage.test.ts)) y otros de una granularidad inferior, utilizando [**Testing Library**](https://testing-library.com/) ([`ContactForm.test.tsx`](./components/ContactForm.test.tsx)).
 
